@@ -1,6 +1,6 @@
-const Vertex = require("./graph").Vertex;
+const Vertex = require("../lib/graph").Vertex;
 const getType = require("jest-get-type");
-const Edge = require("./graph").Edge;
+const Edge = require("../lib/graph").Edge;
 
 describe('Vertex', () => {
   describe('initialize', () => {
@@ -21,7 +21,7 @@ describe('Vertex', () => {
 
     test("it initially sets out_edges as an empty array", () => {
       expect(getType(testVertex.out_edges)).toBe('array');
-      expect(testVertex.out_edges.length).toBe(0);
+      expect(testVertex.out_edges).toHaveLength(0);
     });
   });
 });
