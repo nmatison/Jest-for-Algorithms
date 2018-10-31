@@ -1,0 +1,21 @@
+{
+  "name": "javascript_algorithms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nmatison/Jest-for-Algorithms.git"
+  },
+  "author": "Nicholas Matison",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nmatison/Jest-for-Algorithms/issues"
+  },
+  "homepage": "https://github.com/nmatison/Jest-for-Algorithms#readme"
+}
