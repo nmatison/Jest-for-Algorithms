@@ -1,5 +1,6 @@
 const Vertex = require("./graph").Vertex;
 const getType = require("jest-get-type");
+const Edge = require("./graph").Edge;
 
 describe('Vertex', () => {
   describe('initialize', () => {
@@ -48,11 +49,11 @@ describe('Edge', () => {
     });
 
     test(`it adds itself to the to_vertex's in edges`, () => {
-      expect(to_vertex.in_edges[in_edges.length - 1]).toBe(testEdge)
+      expect(to_vertex.in_edges[to_vertex.in_edges.length - 1]).toBe(testEdge)
     });
 
     test(`it adds itself to the from_vertex's out edges`, () => {
-      expect(from_vertex.out_edges[out_edges.length - 1]).toBe(testEdge)
+      expect(from_vertex.out_edges[from_vertex.out_edges.length - 1]).toBe(testEdge)
     });
 
   });
