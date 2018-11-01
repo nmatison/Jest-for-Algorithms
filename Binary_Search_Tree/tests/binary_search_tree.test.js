@@ -6,6 +6,8 @@ describe('BinarySearchTree', () => {
   let preFilledBst;
   beforeAll(() => {
     bst = new BinarySearchTree();
+    preFilledBst = new BinarySearchTree();
+
     [5, 3, 7, 1, 4, 9, 0, 2, 1.5, 10].forEach((num) => {
       preFilledBst.insert(num);
     })
@@ -24,7 +26,7 @@ describe('BinarySearchTree', () => {
   // #############################
 
   describe('initialize', () => {
-    test('it sets the root to nil', () => {
+    test('it sets the root to null', () => {
       expect(bst.root).toBeNull();
     });
   });
@@ -60,5 +62,5 @@ describe('BinarySearchTree', () => {
     });
   });
 
-  
+
 });
