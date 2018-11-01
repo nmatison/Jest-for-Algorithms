@@ -11,6 +11,12 @@ describe('BSTNode', () => {
     expect(testNode.value).toBe(5);
   });
 
+  test('it does not allow you to alter the value', () => {
+    testNode.value = 3
+    expect(testNode.value).toBe(5);
+    // If you're struggling with this spec I recommend researching getters and setters for ES6 classes.
+  })
+
   test('it starts a left and a right as null', () => {
     expect(testNode.left).toBeNull();
     expect(testNode.right).toBeNull();
