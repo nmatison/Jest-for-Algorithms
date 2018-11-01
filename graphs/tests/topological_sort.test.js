@@ -46,9 +46,12 @@ describe('TopologicalSort', () => {
     new Edge(v7, v8);
     shuffle(vertices);
 
-    expect(solutions).toContain(topologicalSort(vertices)).map((vert) => {
-      vert.value
+    let answer = topologicalSort(vertices).map((vert) => {
+      return vert.value
     });
+
+    expect(solutions).toContainEqual(answer);
+   
   });
 
   test(`it returns [] for a cyclic or unconnected graph`, () => {
