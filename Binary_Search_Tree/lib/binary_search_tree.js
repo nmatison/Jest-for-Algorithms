@@ -1,7 +1,6 @@
 const BSTNode = require('../lib/bst_node');
 
 class BinarySearchTree {
-
   constructor() {
     this.root = null;
   }
@@ -13,6 +12,15 @@ class BinarySearchTree {
     } 
     return this.insertHelper(this.root, value).value;
   }
+
+  find(value, node = this.root) {
+    if (node.value === value) return node;
+    if (value < node.value) {
+      return node.left === null ? null : this.find(value, node.left);
+    } else {
+      return node.right === null ? null : this.find(value, node.right);
+    }
+  };
 
   insertHelper(node, value) {
     if (value <= node.value) {

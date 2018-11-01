@@ -1,4 +1,5 @@
 const BinarySearchTree = require('../lib/binary_search_tree');
+const BSTNode = require('../lib/bst_node');
 
 describe('BinarySearchTree', () => {
 
@@ -62,5 +63,16 @@ describe('BinarySearchTree', () => {
     });
   });
 
+  describe('find', () => {
+    test('it returns null if the value is not in the BST', () => {
+      expect(preFilledBst.find(-5)).toBeNull();
+    });
+
+    test('it returns the correct node if the value is in the BST', () => {
+      let foundNode = preFilledBst.find(4);
+      expect(foundNode).toBeInstanceOf(BSTNode);
+      expect(foundNode.value).toBe(4);
+    });
+  });
 
 });
