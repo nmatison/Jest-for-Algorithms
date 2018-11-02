@@ -1,4 +1,5 @@
 const quickSort = require('../lib/quick_sort');
+const shuffle = require('../../src/shuffle')
 quickSort();
 
 describe('QuickSort', () => {
@@ -27,15 +28,16 @@ describe('QuickSort', () => {
 
   describe('sort', () => {
     test('it sorts an array', () => {
-      let arr = [5, 3, 4, 2, 1, 6];
-      arr.sort();
-      expect(arr).toEqual([1, 2, 3, 4, 5, 6]);
+      let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+      shuffle(arr);
+      arr.quickSort();
+      expect(arr).toEqual([1, 2, 3, 4, 5, 6, 7, 8]);
     });
 
     test('it makes the right number of comparisons (good case)', () => {
       let numComparisons = 0;
       let arr = [4, 2, 1, 3, 6, 5, 7];
-      arr.sort((a, b) => {
+      arr.quickSort(0, arr.length, (a, b) => {
         numComparisons += 1;
 
         if (a < b) return -1;
@@ -56,7 +58,7 @@ describe('QuickSort', () => {
       let arr = [1, 2, 3, 4, 5];
 
       let numComparisons = 0;
-      arr.sort((a, b) => {
+      arr.quickSort(0, arr.length, (a, b) => {
         numComparisons += 1;
 
         if (a < b) return -1;
