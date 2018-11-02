@@ -7,7 +7,7 @@ const _deleteHelper = Symbol('deleteHelper');
 // saving them as consts and making them symbols allows es6 classes to have private methods
 
 class BinarySearchTree {
-  constructor() {
+  constructor(root) {
     this.root = null;
   };
 
