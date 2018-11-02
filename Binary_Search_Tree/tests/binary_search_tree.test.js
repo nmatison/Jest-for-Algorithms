@@ -159,4 +159,11 @@ describe('BinarySearchTree', () => {
       });
     });
   });
+
+  describe('in_order_traversal', () => {
+    test('it visits left children, then itself, then right children', () => {
+      let inOrderArray = [0, 1, 1.5, 2, 3, 4, 5, 7, 9, 10];
+      expect(preFilledBst.inOrderTraversal()).toEqual(inOrderArray);
+    });
+  })
 });
