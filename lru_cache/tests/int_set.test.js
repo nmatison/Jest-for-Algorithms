@@ -1,4 +1,4 @@
-const MaxIntSet = require('../lib/p01_int_set');
+const MaxIntSet = require('../lib/p01_int_set').MaxIntSet;
 
 describe('MaxIntSet', () => {
   let set = new MaxIntSet(50);
@@ -22,18 +22,20 @@ describe('MaxIntSet', () => {
     })
 
     test('it should raise an error when inserting numbers that are out of the range', () => {
-      expect(insertError).toThrow("Out of bounds");
-      expect(insertError2).toThrow("Out of bounds");
+      expect(insertError).toThrow('Out of bounds');
+      expect(insertError2).toThrow('Out of bounds');
     })
   });
 
   describe('include', () => {
     test('it should return false unless the number has been inserted', () => {
+      expect(typeof set.include(1)).toBe('boolean');
       expect(set.include(1)).toBeFalsy();
     });
 
     test('it should return true if the number has been inserted', () => {
       set.insert(1);
+      expect(typeof set.include(1)).toBe('boolean');
       expect(set.include(1)).toBeTruthy();
     });
   });
@@ -46,3 +48,15 @@ describe('MaxIntSet', () => {
     });
   });
 });
+
+// describe('IntSet', () => {
+//   let set = IntSet.new(20);
+
+//   describe('include', () => {
+//     test('it should return false unless the number has been inserted', () => {
+//       expect(set.include(1)).toBeFalsy();
+//     });
+//   });
+// });
+
+

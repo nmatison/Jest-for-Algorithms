@@ -22,4 +22,6 @@ class MaxIntSet {
   }
 }
 
-module.exports = MaxIntSet;
+module.exports = {
+  MaxIntSet: MaxIntSet
+};
