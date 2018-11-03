@@ -10,7 +10,7 @@ describe('Blair Numbers', () => {
 
   test('it handles recursive cases', () => {
     expect(dp.blairNums(6)).toBe(48);
-    expect(dp.blairNums(100)).toBe(2782118076579236997325);
+    expect(dp.blairNums(50)).toBe(98853840194);
   });
 
   test('it runs in non-exponential time', () => {
@@ -18,7 +18,7 @@ describe('Blair Numbers', () => {
     dp.blairNums(1000);
     var end = new Date().getTime();
     var time = end - start;
-    
+
     expect(time).toBeLessThan(100);
   });
 });
