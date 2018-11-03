@@ -22,6 +22,22 @@ class MaxIntSet {
   }
 }
 
+class IntSet {
+
+  constructor(num_buckets = 20) {
+    this.store = this.generateStore(num_buckets);
+  };
+
+  
+
+};
+
+class ResizingIntSet {
+
+};
+
 module.exports = {
-  MaxIntSet: MaxIntSet
+  MaxIntSet,
+  IntSet,
+  ResizingIntSet
 };
