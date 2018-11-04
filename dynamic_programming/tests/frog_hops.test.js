@@ -18,7 +18,7 @@ describe('Frog Hops Bottom Up', () => {
 
   describe('Frog Hops Top Down', () => {
     test('it handles a base case', () => {
-      expect(dp.frogHopsTopDown(1)).toEqual([1])
+      expect(dp.frogHopsTopDown(1)).toEqual([[1]])
       expect(dp.frogHopsTopDown(2)).toEqual([[1, 1], [2]]);
     });
 
