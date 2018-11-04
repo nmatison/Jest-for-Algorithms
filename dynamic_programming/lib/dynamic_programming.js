@@ -1,4 +1,5 @@
 class DynamicProgramming {
+
   constructor() {
     this.blairCache = {
       1: 1,
@@ -52,6 +53,10 @@ class DynamicProgramming {
     return this.frogCache[n].sort();
   };
 
+  superFrogHops(n, k) {
+    
+  };
+
   frogHopsHelper(arr, n) {
     let result = [];
     for (let i = 0; i < arr.length; i++) {
@@ -61,6 +66,8 @@ class DynamicProgramming {
     };
     return result;
   };
+
+  
 }
 
 module.exports = DynamicProgramming;
