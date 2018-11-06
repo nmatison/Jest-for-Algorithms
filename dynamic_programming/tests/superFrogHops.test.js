@@ -19,7 +19,7 @@ describe('Super Frog Hops', () => {
 
   test('it handles cases where n > k', () => {
     expect(dp.superFrogHops(2, 5).sort()).toEqual([[1, 1], [2]]);
-    expect(dp.superFrogHops(3, 10)).toEqual([[1, 1, 1], [1, 2], [2, 1], [3]]);
+    expect(dp.superFrogHops(3, 10)).toEqual([[1, 1, 1], [1, 2], [2, 1], [3]].sort());
   });
 
   test('it runs in non-exponential time', () => {

@@ -11,6 +11,11 @@ class DynamicProgramming {
       2: [[1, 1], [2]],
       3: [[1, 1, 1], [1, 2], [2, 1], [3]]
     };
+
+    this.superFrogCache = {
+      0: [],
+      1 : [[1]]
+    };
   };
 
   blairNums(n) {
@@ -54,7 +59,23 @@ class DynamicProgramming {
   };
 
   superFrogHops(n, k) {
-    
+    for (let i = 2; i <= k; i++) {
+      this.superFrogCache[i] = [];
+      for (let j = i - 1; j > 0; j --) {
+        this.superFrogCache[i] = this.superFrogCache[i].concat(this.frogHopsHelper(this.superFrogCache[j], i - j))
+      };
+      this.superFrogCache[i].push([i]);
+    };
+
+    for (let m = k + 1; m <= n; m++) {
+      this.superFrogCache[m] = [];
+      for(let o = 1; o <= k; o++) {
+        this.superFrogCache[m] = this.superFrogCache[m].concat(this.frogHopsHelper(this.superFrogCache[m - o], o));
+
+      }
+    }
+    return this.superFrogCache[n].sort();
+
   };
 
   frogHopsHelper(arr, n) {
