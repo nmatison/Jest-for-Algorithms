@@ -71,7 +71,6 @@ class DynamicProgramming {
       this.superFrogCache[m] = [];
       for(let o = 1; o <= k; o++) {
         this.superFrogCache[m] = this.superFrogCache[m].concat(this.frogHopsHelper(this.superFrogCache[m - o], o));
-
       }
     }
     return this.superFrogCache[n].sort();
