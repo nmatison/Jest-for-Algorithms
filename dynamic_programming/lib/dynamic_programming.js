@@ -87,6 +87,16 @@ class DynamicProgramming {
     return result;
   };
 
+  knapsack() {
+    // solution soon to come
+    return 1
+  }
+
+  mazeSolver() {
+    // solution soon to come
+    return 1
+  }
+
   
 }
 
