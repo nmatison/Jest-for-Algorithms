@@ -6,7 +6,13 @@
   "dependencies": {},
   "devDependencies": {},
   "scripts": {
-    "test": "jest || true"
+    "test": "jest || true",
+    "graphs": "jest ./graphs/tests/ || true",
+    "bst": "jest ./Binary_Search_Tree/tests/ || true",
+    "dp": "jest ./dynamic_programming/tests/ || true",
+    "dynamic_programming": "jest ./dynamic_programming/tests/ || true",
+    "qs": "jest ./quick_sort/tests || true",
+    "quick_sort": "jest ./quick_sort/tests || true"
   },
   "repository": {
     "type": "git",

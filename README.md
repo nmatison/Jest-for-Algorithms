@@ -1,0 +1,2 @@
+# Algorithm Jest Specs
+This is currently a work in progress. The idea behind this is to build specs that will allow students to work on their data structures and algorithms in javascript with a skeleton and specs to help them along.
