@@ -9,13 +9,11 @@ If you would like to contribute ***please feel free to do so!!!*** Just open up 
   * Graphs
   * Quick Sort
 
-## Tests in Progress:
-  * lru_cache
-  * Dynamic Arrays
-
 ## Tests for the future
   * heaps
   * Promises and Promise.all
+  * lru_cache
+  * Dynamic Arrays
 
 
 ## To run:
