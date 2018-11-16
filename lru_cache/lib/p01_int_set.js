@@ -1,43 +1,43 @@
-class MaxIntSet {
+// class MaxIntSet {
 
-  constructor(max) {
-    this.max = max;
-    this.store = new Array(max + 1);
-  };
+//   constructor(max) {
+//     this.max = max;
+//     this.store = new Array(max + 1);
+//   };
 
-  insert(num) {
-    if (num < 1 || num > this.max) throw "Out of bounds";
-    this.store[num] = true
-    num
-  };
+//   insert(num) {
+//     if (num < 1 || num > this.max) throw "Out of bounds";
+//     this.store[num] = true
+//     num
+//   };
 
-  include(num) {
-    if (!this.store[num]) return false;
-    return true;
-  };
+//   include(num) {
+//     if (!this.store[num]) return false;
+//     return true;
+//   };
 
-  remove(num) {
-    this.store[num] = false;
-    return num;
-  }
-}
+//   remove(num) {
+//     this.store[num] = false;
+//     return num;
+//   }
+// }
 
-class IntSet {
+// class IntSet {
 
-  constructor(num_buckets = 20) {
-    this.store = this.generateStore(num_buckets);
-  };
+//   constructor(num_buckets = 20) {
+//     this.store = this.generateStore(num_buckets);
+//   };
 
   
 
-};
+// };
 
-class ResizingIntSet {
+// class ResizingIntSet {
 
-};
+// };
 
-module.exports = {
-  MaxIntSet,
-  IntSet,
-  ResizingIntSet
-};
+// module.exports = {
+//   MaxIntSet,
+//   IntSet,
+//   ResizingIntSet
+// };
