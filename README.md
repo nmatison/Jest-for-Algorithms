@@ -1,9 +1,9 @@
 # Jest Specs for Data Structures and Algorithms
-This is currently a work in progress. The idea behind this is to build specs that will allow students to work on their data structures and algorithms in javascript with a skeleton and specs to help them along. Please note all README's but this one were written by a/A and are not my work. All specs were converted from their ruby specs to jest specs, and the skeletons are structured similarly to the way theirs are as well.
+This is currently a work in progress. This started as a way to make me feel more comfortable with javascript, but I believe it will be helpful for others as well.
 
-If you see something that needs to be fixed, feel free to create an issue or pull request. You can also just message me. 
+Please note all README's but this one were written by a/A and are not my work. All specs were converted from their ruby specs to jest specs, and the skeletons are structured similarly to the way theirs are as well.
 
-If you would like to contribute ***please feel free to do so!!!*** Just open up a pull request or an issue.
+If you see something that needs to be fixed, feel free to create an issue or pull request. You can also just message me. If you would like to contribute ***please feel free to do so!!!*** Just open up a pull request or an issue.
 
 ## Current Working Tests:
   * Binary Search Tree
@@ -16,7 +16,6 @@ If you would like to contribute ***please feel free to do so!!!*** Just open up 
   * Promises and Promise.all
   * lru_cache
   * Dynamic Arrays
-
 
 ## To run:
 1. git clone this repo
